@@ -1,0 +1,16 @@
+CREATE or REPLACE FUNCTION somefunc() RETURNS void AS $$
+DECLARE
+	quantity integer := 30;
+BEGIN
+	RAISE NOTICE 'Quantidade é %', quantity;
+END; $$
+LANGUAGE plpgsql;
+
+-------------------------------------------
+
+create function selecionar(p_itemno int)
+returns table(name varchar(50), salary float) as $$
+begin
+	return query select s.name, s.salary from dados as s where s.id = p_itemno;
+end;
+$$ language plpgsql;
