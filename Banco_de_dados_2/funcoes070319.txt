@@ -14,3 +14,17 @@ begin
 	return query select s.name, s.salary from dados as s where s.id = p_itemno;
 end;
 $$ language plpgsql;
+
+-------------------------------------------
+
+(NAO FUNCIONA)
+
+create function incrementa(num int)
+declare 
+	val integer;
+begin
+	val := num+1;
+end;
+$$ language plpgsql;
+
+-------------------------------------------
