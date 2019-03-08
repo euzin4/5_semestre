@@ -32,3 +32,23 @@ end;
 $$ language 'plpgsql';
 
 -------------------------------------------
+-------------------------------------------
+create table dados ( id int ,  name varchar(50),  age int , address varchar(50), salary float );
+
+1- Crie uma função capaz de aplicar um aumento de 10% para todos os funcionários;
+
+create or replace function asal() returns void as $$
+begin
+	update dados set salary = salary * 1.1;
+end;
+$$ language 'plpgsql';
+
+2- Crie uma função capaz de receber um valor de aumento e o número do id do usuário que se deseja aumentar o salário
+
+create or replace function auser(id int, aum float) returns boolean as $$
+begin
+	aum = aum/100;
+	update dados set salary = salary + salary * aum where id = id;
+	return found;
+end;
+$$ language 'plpgsql';
