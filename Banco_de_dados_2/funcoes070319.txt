@@ -17,14 +17,14 @@ $$ language plpgsql;
 
 -------------------------------------------
 
-(NAO FUNCIONA)
-
-create function incrementa(num int)
+create or replace function incrementa(a int)
+returns int as $$
 declare 
-	val integer;
+	temp int;
 begin
-	val := num+1;
+	temp = a+1;
+	return(temp);
 end;
-$$ language plpgsql;
+$$ language 'plpgsql';
 
 -------------------------------------------
