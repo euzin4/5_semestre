@@ -1,3 +1,7 @@
+para chamar uma função ja criada usa-se: select nomefunc();
+
+------------------------------------------
+
 CREATE or REPLACE FUNCTION somefunc() RETURNS void AS $$
 DECLARE
 	quantity integer := 30;
