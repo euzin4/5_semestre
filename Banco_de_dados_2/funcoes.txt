@@ -32,6 +32,7 @@ end;
 $$ language 'plpgsql';
 
 -------------------------------------------
+08/03/19
 -------------------------------------------
 create table dados ( id int ,  name varchar(50),  age int , address varchar(50), salary float );
 
@@ -52,3 +53,46 @@ begin
 	return found;
 end;
 $$ language 'plpgsql';
+
+-------------------------------------------
+14/03/19
+-------------------------------------------
+
+1-crie uma trigger para aumentar 10 % ao salário do salário bruto (devido a impostos) antes de adicionar o valor na tabela.
+
+CREATE FUNCTION aumenta() RETURNS trigger AS $$    //tem que retornar como tipo trigger para funcionar
+	BEGIN        
+		NEW.salary := NEW.salary*1.1;        
+		RETURN NEW;  
+	END;
+$$ LANGUAGE plpgsql;
+
+
+//depois de criar a função(neste caso 'aumenta()') o trigger deve ser criado
+CREATE TRIGGER aumsal BEFORE INSERT OR UPDATE ON emp FOR EACH ROW EXECUTE PROCEDURE aumenta();	
+//o BEFORE é usado para executar o trigger antes de modificar os dados na tabela
+
+
+--
+2-Na  tabela  de  EMPREGADO  abaixo,  faça  um  trigger  de  auditoria  que armazene  as  informações  do  empregado,  bem  como,  o  evento (insert, delete ou   update)  que disparou este trigger, o usuário responsável pela alteração e a data do sistema.EMPREGADO( id integer primary key,  nome varchar(50), cpf varchar(15), Num_Departamentointeger,   Salario  DECIMAL(10,2 ), Supervisor    varchar(50));Auditoria(empregado_ID int, cpf CHAR(12), Num_Departamentointeger,    Salario  DECIMAL(10,2 ),  Supervisor    varchar(50) , evento int, usuario varchar, date date);
+evento=1 caso insert
+evento=2 caso update
+evento=3 caso delete
+
+create or replace function evento() returns trigger as $$
+	begin
+		if (TG_OP='INSERT') then
+			insert into auditoria(evento, usuario, date) values(1, current_user, now());
+			return NEW;
+		elseif (TG_OP='UPDATE') then
+			insert into auditoria(evento, usuario, date) values(2, current_user, now());
+			return NEW;
+		elseif (TG_OP='DELETE') then
+			insert into auditoria(evento, usuario, date) values(3, current_user, now());
+		end if;
+		return NULL;
+	end
+$$ language plpgsql;
+
+
+CREATE TRIGGER tr_evento AFTER INSERT OR UPDATE OR DELETE ON empregado FOR EACH ROW EXECUTE PROCEDURE evento();
