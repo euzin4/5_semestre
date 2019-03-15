@@ -1,0 +1,17 @@
+create view t_view as select * from empregado where supervisor='tom';
+
+create view J_view as select * from empregado natural join dados;
+
+--------------------------------------------------------------------------------
+
+3-
+
+create database wiki;
+
+\c wiki
+
+create table pageRevision(name varchar, date date, author varchar, text text);
+
+create table pageAudit(name	varchar, date date, dif_len int, _t text); //mudar
+
+create function ...
