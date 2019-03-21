@@ -96,3 +96,51 @@ $$ language plpgsql;
 
 
 CREATE TRIGGER tr_evento AFTER INSERT OR UPDATE OR DELETE ON empregado FOR EACH ROW EXECUTE PROCEDURE evento();
+
+---------------------
+21/03/19
+---------------------
+
+-no terminal pode ser usado 'BEGIN;' antes de executar outros comandos e depois 'END;' para garantir que não haja erros nas modificações do BD;
+--
+-com a tabela cliente(numero int primary key, cpf int, nome varchar(50)), faça:
+1)uma transação com "commit" (faça 3 inserts)
+TERMINAL1:
+begin;
+insert into cliente values (1, 123, 'joao');
+insert into cliente values (2, 455, 'jose');
+insert into cliente values (3, 562, 'maria');
+end;
+
+2)uma transação com "rollback" (faça 3 inserts)
+TERMINAL1:
+begin;
+insert into cliente values (4, 123, joao);	<--nome sem aspas(erro)
+insert into cliente values (5, 455, 'jose');
+insert into cliente values (6, 562, 'maria');
+end;
+
+3)uma transação tentando acessar dados de outra transação ainda não "comitados" (abra dois terminais com o postgres)
+TERMINAL1:
+begin;
+insert into cliente values (7, 974, 'josefa');
+(não executar o 'end' e ir para o terminal 2)
+
+TERMINAL2:
+begin;
+update cliente set cpf=681 where numero=7;
+end;
+
+4)rode duas transações com a inserção do mesmo valor de PK, o que acontece? (abra dois terminais com o postgres)
+TERMINAL1:
+begin;
+insert into cliente values (8, 234, 'joao');
+(não executar o 'end' e ir para o terminal 2)
+end;
+
+TERMINAL2:
+begin;
+insert into cliente values (8, 098, 'tiao');
+end;
+(executar o 'end' no terminal1)
+--
