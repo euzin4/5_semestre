@@ -144,3 +144,4 @@ insert into cliente values (8, 098, 'tiao');
 end;
 (executar o 'end' no terminal1)
 --
+ 
