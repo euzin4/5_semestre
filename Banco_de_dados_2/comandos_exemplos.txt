@@ -143,5 +143,29 @@ begin;
 insert into cliente values (8, 098, 'tiao');
 end;
 (executar o 'end' no terminal1)
---
+----------------------------
+ 22/03/19
+ ----------------------------
  
+2-Segundo as operações abaixo:
+1) <start t>; 
+2) <T,A,10>; 
+3) <Start U>; 
+4) <U,B,20>; 
+5) <T,C,30>; 
+6) <T,D,40>; 
+7) <Commit T>; 
+8) <U,E,50>; 
+9) <Commit U>
+Suponha que uma operação de checkpoint não bloqueante tenha iniciado imediatamente depois da operação abaixo. Quando o CKPT END é escrito?  
+A) 2 
+'start ckpt T', entre as linhas 2 e 3
+'end ckpt T', entre as linhas 7 e 8
+B) 3 
+'start ckpt U', entre as linhas 4 e 5
+'end ckpt U', entre as linhas 9 e 10
+C) 6 
+???
+
+---
+
