@@ -1,17 +1,32 @@
-create view t_view as select * from empregado where supervisor='tom';
+create table PageRevision(name varchar, date date, author varchar , text text);
+create table PageAudit(name varchar,date date, dif_len int, acao varchar);
 
-create view J_view as select * from empregado natural join dados;
+-------
 
---------------------------------------------------------------------------------
+CREATE OR REPLACE FUNCTION auditoria() RETURNS trigger AS $$
+ BEGIN
+ if(TG_OP = 'INSERT') THEN
+    insert into pageaudit values(current_user, current_timestamp, length(NEW.text), 'insert');
+    RETURN NEW;
+ elsif(TG_OP = 'UPDATE') THEN
+    insert into pageaudit values(current_user, current_timestamp, length(NEW.text), 'update');
+    RETURN NEW;
+ elseif(TG_OP = 'DELETE') THEN
+    insert into pageaudit values(current_user, current_timestamp, length(OLD.text), 'delete');
+    RETURN OLD;
+ END IF;
+    RETURN NULL;
+ END;
+$$ LANGUAGE plpgsql;
 
-3-
+-------
 
-create database wiki;
+CREATE TRIGGER autoaudit AFTER INSERT OR UPDATE OR DELETE ON pagerevisions FOR EACH ROW EXECUTE PROCEDURE auditoria();
 
-\c wiki
+-------
 
-create table pageRevision(name varchar, date date, author varchar, text text);
+insert into pagerevisions (name, date, author, text) values ('joao', current_date, current_user, 'meu texto');
 
-create table pageAudit(name	varchar, date date, dif_len int, _t text); //mudar
+update pagerevisions set text='batata' where name='joao';
 
-create function ...
+delete from pagerevisions where name='joao';
