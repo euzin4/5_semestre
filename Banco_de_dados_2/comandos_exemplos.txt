@@ -211,3 +211,4 @@ Crash!
 04/04/19
 ------------------------------------
 *concorrencia
+*uma operação é serial quando todas as operações de um usuário é executada para depois passar para as execuções de outro usuario
