@@ -1,0 +1,17 @@
+1-o tema
+2-o problema
+3-revisão bibliografica
+4-introdução
+4.1-objetivos(geral e especifico)
+5-justificativa
+6-metodo de pesquisa
+7-metodologia de pesquisa
+8-resultados esperados
+9-conclusão
+10-discussão dos resultados
+11-ameaças a validade
+12-trabalhos futuros
+13-titulo
+14-resumo
+15-abstract
+16-refêrecias
