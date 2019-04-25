@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct _nodo{
+    char linha[50];
+    int nlinha;
+    struct _nodo *ant;
+    struct _nodo *prox;
+} tp_nodo;
+typedef struct _inicio{
+    tp_nodo *inicio;
+    tp_nodo *nodo;
+} tp_raiz;
+typedef struct _banco{
+    char nomev[10];
+    int vold[10];
+    int vnew[10];
+    int trsa[10];
+}tp_banco;
+
+int main(){
+    tp_raiz *raiz;
+    FILE *file;
+//------------------------------------------------------ inicia raiz
+    raiz = (tp_raiz*)malloc(sizeof(tp_raiz));
+    raiz->inicio = (tp_nodo*)malloc(sizeof(tp_nodo));
+    raiz->inicio->nlinha = 1;
+    raiz->inicio->ant = NULL;
+    raiz->inicio->prox = NULL;
+    raiz->nodo = raiz->inicio;
+
+    file = fopen("arquivo.txt", "r");
+    if(file != NULL){
+        while(fgets(raiz->nodo->linha, 49, file) != NULL){
+            if(raiz->nodo->nlinha == 1){
+                //codigo da 1 linha
+            }else{
+                //code
+            }
+        }
+    }else{
+        printf("Ocorreu um erro na abertura do arquivo\n\n");
+    }
+}
