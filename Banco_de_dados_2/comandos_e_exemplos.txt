@@ -251,5 +251,30 @@ LRU:
 ->|11|12|13|14|15|1|2|3|4|10|
 ->|11|12|13|14|15|1|2|3|4|5|
 ->|11|12|13|14|15|1|2|3|4|5|
--------------
 
+----------------------------------------------------
+03/05/19
+----------------------------------------------------
+
+*clock algorithm no caderno
+
+1)Execute o LRU e algoritmo do clock para as seguintes requisições. Identifique quantas páginas são carregadas. Buffer com tamanho 4
+entradas: 3, 2, 3, 0, 8, 4, 2, 5, 0, 9, 8, 3, 2;
+->resultado no caderno
+---------------
+
+1-Na árvore abaixo, o que tenho que fazer para saber se tem 10 unidades de espaço disponíveis?
+   8 
+ 8   5 
+8 8 3 5
+r:olhando o valor da raiz, que é o maior valor da arvore
+
+2) Atualize a árvore acima após a alocação de 6 novas unidades de espaço. 
+   8 
+ 8   5 
+8 8 3 5
+
+   8 
+ 8   5 
+2 8 3 5
+a casa de valor 8 foi subtraida 6 e virou 2 mas sua casa pai nao muda pois a sua casa irmã é 8
