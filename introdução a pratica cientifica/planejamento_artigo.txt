@@ -1,18 +1,18 @@
 1-definir o tema {26/05}
-2-encontrar o problema {02/06}
-3-revisão bibliografica(leituras feitas sobre o assunto) {19/06}
+2-encontrar o problema {16/06}
+3-revisão bibliografica(leituras feitas sobre o assunto) {23/06}
 (os 3 primeiros itens são os mais demorados)
 4-introdução {23/06}
 4.1-objetivos(geral e especifico) {23/06}
-4.2-justificativa {26/06}
-6-metodo de pesquisa(qualitativo ou quantitativo) {27/06}
-7-metodologia de pesquisa(definir os procedimentos de coleta de dados e como esses dados serão usados) {27/06}
-8-resultados esperados {28/06}
-9-conclusão {30/06}
-10-discussão dos resultados(numeros a partir de amostras) {28/06}
-11-ameaças a validade(o que pode comprometer os resultados das amostras) {28/06}
-12-trabalhos futuros(assuntos em aberto que podem ser abrandidos futuramente, o que não foi feito no artigo) {28/06}
-13-titulo {29/06}
+4.2-justificativa {23/06}
+6-metodo de pesquisa(qualitativo ou quantitativo) {30/06}
+7-metodologia de pesquisa(definir os procedimentos de coleta de dados e como esses dados serão usados) {30/06}
+8-resultados esperados {30/06}
+9-discussão dos resultados(numeros a partir de amostras) {30/06}
+10-ameaças a validade(o que pode comprometer os resultados das amostras) {30/06}
+11-conclusão {30/06}
+12-trabalhos futuros(assuntos em aberto que podem ser abrandidos futuramente, o que não foi feito no artigo) {30/06}
+13-titulo {30/06}
 14-resumo {30/06}
 15-abstract {01/07}
 16-refêrecias {03/07}
