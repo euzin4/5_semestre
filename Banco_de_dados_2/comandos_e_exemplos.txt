@@ -285,9 +285,9 @@ a casa de valor 8 foi subtraida 6 e virou 2 mas sua casa pai nao muda pois a sua
 
 1)create table Movie(name char(30), address char (255), data date*)
 *date ocupa 10 bytes;
--Suponha que os registros da tabela Movie serão armazenados em páginas de 4kb. O cabeçalho do registro ocupa 12 bytes (ponteiro para o esquema, tamanho registro, timestamp). Quantos registros cabem na página?
+-Suponha que os registros da tabela Movie serão armazenados em páginas de 4kb. O cabeçalho do registro ocupa 12 bytes (ponteiro para o esquema, tamanho registro, timestamp). Quantos registros cabem na página?(paginação de tamanho fixo)
 
-12bytes(cabeçalho/inf. de config)+30(char)+255(char)+10(date)=307
+12 bytes(cabeçalho/inf. de config)+30(char)+255(char)+10(date)=307 bytes
 4kb=4096
-4096/307=13
+4096/307=13 registros
 --------------
