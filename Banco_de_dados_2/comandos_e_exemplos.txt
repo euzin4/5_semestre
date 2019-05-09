@@ -291,3 +291,9 @@ a casa de valor 8 foi subtraida 6 e virou 2 mas sua casa pai nao muda pois a sua
 4kb=4096
 4096/307=13 registros
 --------------
+2)Insira os registros abaixo em uma página com tamanho variado. Os registros tem no maximo 200 bytes cada. Demonstre o que acontece no caso dos registros terem seu tamanho alterado para 300 bytes.
+a)“A”
+b)“BBBBBBBB”
+c)“DDDDDDDDDDDDDDD"
+d)O que acontece caso o primeiro registro seja alterado para “ABXXXXX”
+(no caderno)
