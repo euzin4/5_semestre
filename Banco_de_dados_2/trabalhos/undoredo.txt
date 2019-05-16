@@ -21,7 +21,7 @@ typedef struct _banco{
 int main(){
     tp_raiz *raiz;
     FILE *file;
-//------------------------------------------------------ inicia raiz
+//----------------------------------------------------- inicia raiz
     raiz = (tp_raiz*)malloc(sizeof(tp_raiz));
     raiz->inicio = (tp_nodo*)malloc(sizeof(tp_nodo));
     raiz->inicio->nlinha = 1;
