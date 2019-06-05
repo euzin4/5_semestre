@@ -19,3 +19,31 @@ atingisse os objetivos do meu TCC/tese/dissertação?".
 do curso.
 	As limitações são, portanto, aspectos do trabalho dos quais o autor tem conciência e reconhece a importância, mas não tem condições de abordar no tempo 
 disponível.
+
+*Artigo científico:
+-Autores: Como um artigo é um trabalho colaborativo comumente tem mais de um autor, o orientador comumente é o autor, comumente o primeiro autor de um artigo 
+costuma ser o mais importante.
+	O ideal é que sejam considerados co-autores apenas pessoas que participaram da confecçao do texto e/ou participado da coleta e análize dos dados.
+
+*Escrita do artigo:
+	Primeiramente o autor deve pensar em uma frase que resuma a contribuição do artigo e então desenvolver essa frase apresentando antecedentes, detalhamento e 
+consequências dessa idéia.
+	Um artigo consiste na comunicação de uma idéia. Não se deve falar por falar. Não se deve escrever a toa, nem desperdiçar preciosas linhas com informação 
+irrelevante ou desconexa.
+	Um artigo cientifico em geral é um texto curto, com 8 a 12 páginas. Raramente um artigo terá mais do que 16 páginas.
+	Então o artigo deve ser uma transcrição objetiva e precisa de uma idéia de pesquisa, do desenvolvimento que a validou e das suas consequências no mundo.
+	Assim, o artigo deve enfatizar o resultado concreto obtido na pesquisa. Importante também é mostrar como o autor chegou naquele resultado. E por fim, qual o 
+problema real que o resultado resolve.
+	Sempre lembre de perguntar "qual é o público alvo do meu artigo?".
+
+*A contribuição do meu artigo:
+	Não deve-se deixar para o final, deve ser apresentada já no início, no abstract/resumo e introdução.
+
+*Veículos de publicação:
+-Periódico: É considerada a publicação mais importante por todas as áreas da ciência.
+-Eventos ou conferências: Embora não valorizadas como em periódicos, estas também tem um peso relevante.
+-Workshops e seminários: Em geral são eventos satélites de conferências maiores. São consideradas publicações de menor impacto. (Sempre se preocupar em buscar um 
+da área específica do artigo e considerar o qualis/capes).
+
+*Ética no envio de artigos:
+	Enviar ou publicar em um evento periódico, implica no compromisso de não enviar ou publicar novamente esse mesmo artigo ou partes dele em outro local.
