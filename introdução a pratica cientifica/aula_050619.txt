@@ -1,0 +1,21 @@
+*justificativa:
+	Pode-se justificar o tema de pesquisa, mas mais importante ainda é justificar a escolha do objetivo. O porque é importante resolver aquele problema. 
+	Em geral, a justificativa do tema aparece na contextualização do trabalho (introdução), em que se tenta justificar ao leitor que o problema escolhido
+realmente é relevante.
+	Essas evidências de que o problema é relevante podem ser refências a outros trabalhos que eventualmente mostraram algum tipo de resultado que aponte para a 
+viabilidade da hipótese/problema escolhido(a), ou ainda em dados colhidos preliminarmente pelo próprio autor do trabalho ou em um estudo de caso.
+
+*Resultados esperados:
+	São situações que o autor de um trabalho espera que ocorram, caso seus objetivos sejam atingidos. Os resultados esperados normalmente fogem ao escopo do 
+trabalho. O autor da pesquisa não tentara obter resultados esperados ao final da pesquisa. Eles são posteriores.
+	Isso diferencia os resultados esperados dos objetivos. Os objetivos são perseguidos pelo autor, e ao final do trabalho ele dirá se foram ou não atingidos. Os
+resultados esperados possivelmente ocorrerão após a conclusão do trabalho, assim, pode-se dizer que os objetivos devem ser verificáveis ao final do trabalho, 
+inclusive os objetivos específicos. Já os resultados esperados são apenas esperança e não podem necessariamente verificados ao final do trabalho.
+	Uma forma de se tentar determinar quais são os resultados esperados do trabalho consiste em fazer a pergunta: "o que possivelmente mudaria no mundo se eu
+atingisse os objetivos do meu TCC/tese/dissertação?".
+
+*Limitação do trabalho:
+	Um trabalho de pesquisa pode começar muitas vezes com um objetivo demasiadamente amplo e, portanto, inalcançável durante o tempo disponível para a realização 
+do curso.
+	As limitações são, portanto, aspectos do trabalho dos quais o autor tem conciência e reconhece a importância, mas não tem condições de abordar no tempo 
+disponível.
