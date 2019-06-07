@@ -74,7 +74,11 @@ CREATE TRIGGER aumsal BEFORE INSERT OR UPDATE ON emp FOR EACH ROW EXECUTE PROCED
 
 
 --
-2-Na  tabela  de  EMPREGADO  abaixo,  faça  um  trigger  de  auditoria  que armazene  as  informações  do  empregado,  bem  como,  o  evento (insert, delete ou   update)  que disparou este trigger, o usuário responsável pela alteração e a data do sistema.EMPREGADO( id integer primary key,  nome varchar(50), cpf varchar(15), Num_Departamentointeger,   Salario  DECIMAL(10,2 ), Supervisor    varchar(50));Auditoria(empregado_ID int, cpf CHAR(12), Num_Departamentointeger,    Salario  DECIMAL(10,2 ),  Supervisor    varchar(50) , evento int, usuario varchar, date date);
+2-Na  tabela  de  EMPREGADO  abaixo,  faça  um  trigger  de  auditoria  que armazene  as  informações  do  empregado,  bem  como,  
+o  evento (insert, delete ou   update)  que disparou este trigger, o usuário responsável pela alteração e a data do 
+sistema.EMPREGADO( id integer primary key,  nome varchar(50), cpf varchar(15), Num_Departamentointeger,   Salario  DECIMAL(10,2 )
+,Supervisor    varchar(50));Auditoria(empregado_ID int, cpf CHAR(12), Num_Departamentointeger,    Salario  DECIMAL(10,2 ),  
+Supervisor    varchar(50) , evento int, usuario varchar, date date);
 evento=1 caso insert
 evento=2 caso update
 evento=3 caso delete
@@ -101,7 +105,8 @@ CREATE TRIGGER tr_evento AFTER INSERT OR UPDATE OR DELETE ON empregado FOR EACH 
 21/03/19
 ---------------------
 
--no terminal pode ser usado 'BEGIN;' antes de executar outros comandos e depois 'END;' para garantir que não haja erros nas modificações do BD;
+-no terminal pode ser usado 'BEGIN;' antes de executar outros comandos e depois 'END;' para garantir que não haja erros nas 
+modificações do BD;
 --
 -com a tabela cliente(numero int primary key, cpf int, nome varchar(50)), faça:
 1)uma transação com "commit" (faça 3 inserts)
@@ -157,7 +162,8 @@ end;
 7) <Commit T>; 
 8) <U,E,50>; 
 9) <Commit U>
-Suponha que uma operação de checkpoint não bloqueante tenha iniciado imediatamente depois da operação abaixo. Quando o CKPT END é escrito?  
+Suponha que uma operação de checkpoint não bloqueante tenha iniciado imediatamente depois da operação abaixo. Quando o CKPT END é 
+escrito?  
 A) 2 
 'start ckpt T', entre as linhas 2 e 3
 'end ckpt T', entre as linhas 7 e 8
@@ -176,9 +182,11 @@ atividade 5:
 REDO: t1, t2, t3, t7;
 UNDO: t4, t5, t6;
 2 Qual é o valor final nas variáveis?
-(para facilitar, primeiro é alterado os valores em que será feito o REDO: t1, t2, t3, t7; e depois os valores em que será feito o UNDO: t4, t5, t6;)
+(para facilitar, primeiro é alterado os valores em que será feito o REDO: t1, t2, t3, t7; e depois os valores em que será feito o 
+UNDO: t4, t5, t6;)
 A=25, B=30, C=55, D=31, E=28, F=1; 
-(explicação: <write(comando) T1(nome da tarefa ligada ao comando), A(variavel que será alterada), 5(valor antigo da variavel), 10(valor novo da variavel)>)
+(explicação: <write(comando) T1(nome da tarefa ligada ao comando), A(variavel que será alterada), 5(valor antigo da variavel), 
+10(valor novo da variavel)>)
 
 <start T1>
 <write T1,A,5,10>
@@ -219,7 +227,8 @@ Crash!
 02/05/19
 ------------------------------------
 1-usando MRU(Most recently used) e LRU(Least recently used):
-Suponhamos uma leitura que recupere duas vezes as páginas 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 e 15 (e um buffer com 10 páginas e comporta uma tupla por página - vazio)
+Suponhamos uma leitura que recupere duas vezes as páginas 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 e 15 (e um buffer com 10 
+páginas e comporta uma tupla por página - vazio)
 MRU:
 ->|-|-|-|-|-|-|-|-|-|-| 
 ->|1|2|3|4|5|6|7|8|9|10|
@@ -258,7 +267,8 @@ LRU:
 
 *clock algorithm no caderno
 
-1)Execute o LRU e algoritmo do clock para as seguintes requisições. Identifique quantas páginas são carregadas. Buffer com tamanho 4
+1)Execute o LRU e algoritmo do clock para as seguintes requisições. Identifique quantas páginas são carregadas. Buffer com 
+tamanho 4
 entradas: 3, 2, 3, 0, 8, 4, 2, 5, 0, 9, 8, 3, 2;
 ->resultado no caderno
 ---------------
@@ -285,15 +295,24 @@ a casa de valor 8 foi subtraida 6 e virou 2 mas sua casa pai nao muda pois a sua
 
 1)create table Movie(name char(30), address char (255), data date*)
 *date ocupa 10 bytes;
--Suponha que os registros da tabela Movie serão armazenados em páginas de 4kb. O cabeçalho do registro ocupa 12 bytes (ponteiro para o esquema, tamanho registro, timestamp). Quantos registros cabem na página?(paginação de tamanho fixo)
+-Suponha que os registros da tabela Movie serão armazenados em páginas de 4kb. O cabeçalho do registro ocupa 12 bytes (ponteiro 
+para o esquema, tamanho registro, timestamp). Quantos registros cabem na página?(paginação de tamanho fixo)
 
 12 bytes(cabeçalho/inf. de config)+30(char)+255(char)+10(date)=307 bytes
 4kb=4096
 4096/307=13 registros
 --------------
-2)Insira os registros abaixo em uma página com tamanho variado. Os registros tem no maximo 200 bytes cada. Demonstre o que acontece no caso dos registros terem seu tamanho alterado para 300 bytes.
+2)Insira os registros abaixo em uma página com tamanho variado. Os registros tem no maximo 200 bytes cada. Demonstre o que 
+acontece no caso dos registros terem seu tamanho alterado para 300 bytes.
 a)“A”
 b)“BBBBBBBB”
 c)“DDDDDDDDDDDDDDD"
 d)O que acontece caso o primeiro registro seja alterado para “ABXXXXX”
 (no caderno)
+
+----------------------------------------------------
+07/06/19
+----------------------------------------------------
+
+*indices clusterizados são como uma arvore b+, mas ordenada a partir de somente uma coluna do BD (um tipo de dado especifico, ex: 
+ordenação a partir dos nomes em uma tabela);
