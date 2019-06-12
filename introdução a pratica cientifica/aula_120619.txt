@@ -31,3 +31,15 @@ ou ainda, identificação ou análize dos resultados da implementação de uma d
 pesquisador para cada respondente, para garantir que o respondente entenda todas as questões e formem as respostas (ex: entrevistas 
 feitas ao telefone), no não supervisionado, o pesquisador simplesmente envia o questionário e espera a resposta final, sem nenhum 
 tipo de interferência.
+*Pesquisa-ação:
+  "Pesquisa-ação é uma forma de investigação baseada em uma auto reflexão coletiva empreendidas pelos participantes de um grupo 
+social de maneira a melhorar a racionalidade e a justiça de suas próprias práticas sociais e educacionais. Como também e 
+entendimento dessas práticas e de situações onde essas práticas acontecem".
+  A forma inicial de pesquisa-ação é caracterizada pela colaboração e negociação entre especialistas e práticos, integrantes da 
+pesquisa.
+  A pesquisa-ação é um processo que se modifica continuamente em espirais de reflexão e ação, onde cada espiral inclui:
+-diagnosticar: uma situação prática ou um problema prático que se quer melhorar ou resolver.
+-formular estratégias de ação.
+-desenvolver essas estratégias e avaliar sua eficiência.
+-ampliar a compreensão da nova situação.
+-proceder aos mesmos passos para um novo teste/ciclo.
