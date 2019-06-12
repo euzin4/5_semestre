@@ -1,0 +1,23 @@
+*Método de pesquisa:
+  Para definir o método de pesquisa, é preciso saber/definir primeiramente o objeto de estudo.
+  Os métodos de pesquisa estão divididos entre qualitativo e quantitativo.
+1)quantitativo: é o uso de instrumental estatistico e dados numéricos.
+2)qualitativo: que se caracteriza pela qualificação dos dados coletados, durante a análize do problema. E utiliza métodos de 
+análize qualitativos, como a teoria fundamentada nos dados.
+*Experimento controlado:
+  Consiste na investigação de uma hipótese onde uma ou mais variáveis independentes são manipuladas para medir seu efeito em uma
+ou mais variáveis dependentes. Isso nos permite determinar de forma precisa como as variáveis estão se relacinando e se existe um
+relacionamento de causa e efeito entre elas. Cada combinação de valores de variáveis independentes nós chamamos de tratamento. Em
+um experimento simples, temos dois tratamentos representando dois níveis de uma variável independente (ex: a utilização de uma 
+ferramenta e a não utilização). A maioria dos experimentos necessitam que o ser humano (subject) faça algum tipo de tarefa. Desta 
+forma, medimos o efeito de cada um dos tratamentos nos subjects.
+*Estudo de casos:
+  São especialmente indicados como estratégia quando: - se colocam questões do tipo "como" e "porque", - o pesquisador tem pouco 
+controle sobre os eventos, - o foco se encontra em fenômenos contemporâneos inseridos em algum contexto da vida real.
+*Caracteristicas dos estudos de caso:
+- O fenômeno é observado em seu ambiente natural.
+- Os dado são coletados por diversos meios.
+- Um ou mais entes (pessoas, grupos, organizações) são examinados.
+- A complexidade do caso é estudada intensamente.
+- Não são utilizados controles experimentais.
+- Pode-se buscar evidências quantitativas e qualitativas.
