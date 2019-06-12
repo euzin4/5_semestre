@@ -21,3 +21,13 @@ controle sobre os eventos, - o foco se encontra em fenômenos contemporâneos in
 - A complexidade do caso é estudada intensamente.
 - Não são utilizados controles experimentais.
 - Pode-se buscar evidências quantitativas e qualitativas.
+*Relato de experiência:
+  Geralmente descrito/escrito por uma pessoa que participou de um projeto em uma empresa. Esse trabalho deve ter um objetivo 
+prático, por exemplo, identificação e análize de um determinado problema, busca de soluções ou implementação de soluções na prática
+ou ainda, identificação ou análize dos resultados da implementação de uma determinada solução.
+*Survey:
+  É um método utilizado para descrever, comparar, explicar atitudes e comportamentos. Não é apenas um questionáio ou checklist para
+  reunir informações. Existem dois tipos de survey: supervisionado ou não supervisionado. O primeiro exige que tenhamos um 
+pesquisador para cada respondente, para garantir que o respondente entenda todas as questões e formem as respostas (ex: entrevistas 
+feitas ao telefone), no não supervisionado, o pesquisador simplesmente envia o questionário e espera a resposta final, sem nenhum 
+tipo de interferência.
