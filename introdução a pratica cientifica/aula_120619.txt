@@ -43,3 +43,20 @@ pesquisa.
 -desenvolver essas estratégias e avaliar sua eficiência.
 -ampliar a compreensão da nova situação.
 -proceder aos mesmos passos para um novo teste/ciclo.
+*Validade do estudo:
+  A validade de um estudo de pesquisa referece ao quão bem os resultados encontrados para os participantes do estudo representam
+resultados verdadeiros para individuos semelhantes fora do estudo. A validade de um estudo de pesquisa inclui dois domínios. A 
+válidade interna e externa.
+  Validade interna: é definida como a extensão em que os resultados observados representam uma verdade para a população sendo 
+estudada e, portanto, não se devem a erros metodológicos. A validade interna de um estudo pode ser ameaçada por vários fatores, 
+incluindo erros na avaliação ou na seleção de participantes do estudo, cabendo aos participantes evitar tais erros.
+  Validade externa: pergunta-se se os resultados do estudo aplicam-se ou não em uma amostra semelhante em cenários diferentes.
+Refere-se a extensão em que os resultados de um estudo são aplicáveis.
+------------  
+  [verdade no estudo]----generalização---->[verdade na vida real]
+   validade interna                         validade externa
+------------
+  A falta da validade interna implica que os resultados do estudo desviam da verdade e, portanto, não pode ser tirada nenhuma 
+conclusão, assim se os resultados de um estudo não são internamente validos, a validade externa é irrelevante.
+  A falta de validade externa implica que os resultados do estudo podem não se aplicar a amostras que diferem da população do 
+estudo.
