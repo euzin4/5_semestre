@@ -322,3 +322,15 @@ ordenação a partir dos nomes em uma tabela);
 ----------------------------------------------------
 
 *join sem where é o mesmo que multiplicar o tamanho de uma tabela com o tamanho da outra
+---------
+r=100 tuplas, 1000 paginas
+s=80tp, 500p
+
+pale-oriented nested
+r*s+r=valor
+
+simple nested loop join
+r+s=valor
+
+advanced nested loop join(olhar slide)
+r+s*[r/(b-2)]=valor
