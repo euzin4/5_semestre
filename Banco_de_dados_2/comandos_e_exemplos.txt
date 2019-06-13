@@ -321,7 +321,7 @@ ordenação a partir dos nomes em uma tabela);
 13/06/19
 ----------------------------------------------------
 
-*otimização de consulta 1(slide)
+*otimização de consulta (slides)
 *join sem where é o mesmo que multiplicar o tamanho de uma tabela com o tamanho da outra
 ---------
 r=100 tuplas, 1000 paginas
