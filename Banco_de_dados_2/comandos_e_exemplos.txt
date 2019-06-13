@@ -316,3 +316,9 @@ d)O que acontece caso o primeiro registro seja alterado para “ABXXXXX”
 
 *indices clusterizados são como uma arvore b+, mas ordenada a partir de somente uma coluna do BD (um tipo de dado especifico, ex: 
 ordenação a partir dos nomes em uma tabela);
+
+----------------------------------------------------
+13/06/19
+----------------------------------------------------
+
+*join sem where é o mesmo que multiplicar o tamanho de uma tabela com o tamanho da outra
