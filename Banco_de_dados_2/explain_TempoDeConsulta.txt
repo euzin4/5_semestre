@@ -1,2 +1,4 @@
 http://www.dicas-l.com.br/freedb/freedb_20080427.php
 https://thoughtbot.com/blog/reading-an-explain-analyze-query-plan
+
+comando para abir o firebird: isql-fb(no terminal)
