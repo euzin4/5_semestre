@@ -1,0 +1,2 @@
+1-consulta sem uso de indice (procura nome de filmes e sobrenomes de atores que sao iguais)
+select last_name from actors a join movies m on a.last_name = m.name;
