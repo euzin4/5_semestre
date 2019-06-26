@@ -1,2 +1,6 @@
-1-consulta sem uso de indice (procura nome de filmes e sobrenomes de atores que sao iguais)
-select last_name from actors a join movies m on a.last_name = m.name;
+1-consulta sem uso de indice (procura nome de filmes e sobrenomes de atores que sao iguais):
+-select last_name from actors a join movies m on a.last_name = m.name;
+
+2-selecionar o nome dos filmes que foram dirigidos por diretores que ja fizeram filmes de ação:
+-select name from movies m join movies_directors md on m.id=md.movie_id where exists(select id from directors d join directors_genres dg on d.id= dg.director_id where dg.genre='Action');
+
