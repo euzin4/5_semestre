@@ -1,0 +1,46 @@
+CREATE TABLE  actors  (
+   id  int NOT NULL,
+   first_name  varchar(100) DEFAULT NULL,
+   last_name  varchar(100) DEFAULT NULL,
+   gender  char(1) DEFAULT NULL,
+  PRIMARY KEY ( id )
+);
+
+CREATE TABLE  directors  (
+   id  int NOT NULL,
+   first_name  varchar(100) DEFAULT NULL,
+   last_name  varchar(100) DEFAULT NULL,
+  PRIMARY KEY ( id )
+);
+
+CREATE TABLE  movies  (
+   id  int NOT NULL,
+   name  varchar(100) DEFAULT NULL,
+   years  int DEFAULT NULL,
+   rank  float DEFAULT NULL,
+  PRIMARY KEY ( id )
+);
+
+
+CREATE TABLE  movies_genres  (
+   movie_id  int NOT NULL,
+   genre  varchar(100) NOT NULL,
+  PRIMARY KEY ( movie_id , genre ),
+  CONSTRAINT  movies_genres_ibfk_1  FOREIGN KEY ( movie_id ) REFERENCES  movies  ( id ) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE movies_directors  (
+   director_id  int NOT NULL,
+   movie_id  int NOT NULL,
+  PRIMARY KEY ( director_id , movie_id ),
+  CONSTRAINT  movies_directors_ibfk_1  FOREIGN KEY ( director_id ) REFERENCES  directors  ( id ) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT  movies_directors_ibfk_2  FOREIGN KEY ( movie_id ) REFERENCES  movies  ( id ) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE  directors_genres  (
+   director_id  int NOT NULL,
+   genre  varchar(100) NOT NULL,
+   prob  float DEFAULT NULL,
+  PRIMARY KEY ( director_id , genre ),
+  CONSTRAINT  directors_genres_ibfk_1  FOREIGN KEY ( director_id ) REFERENCES  directors  ( id ) ON DELETE CASCADE ON UPDATE CASCADE
+);
